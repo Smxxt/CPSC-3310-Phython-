@@ -1,0 +1,15 @@
+# Assignment 5 Reflection
+
+# Techniques Applied from Lecture 5
+1. Structured scripts using a main() function alongside helper functions, with top-level execution followed by if __name__ == "__main__":.
+2. Passed user inputs into functions as arguments and returned validated values back to main().
+3. Utilized while loops combined with the walrus operator to get input prompts and validation tests into single expressions.
+4. Constructed a controlled while loop to repeatedly prompt the user.
+
+# Challenges Encountered & Solutions in first program of tempreture_conversion
+  I faced couple challenges by Validating inputs against absolute zero bounds (-459.67 F vs. -273.15 C) while ensuring type selection ('F' or 'C') was properly selected.
+  I make sure that validation in get_temperature_type() and get_temperature(), using the selection string to assign the limit before testing within the loop.
+
+# Challenges Encountered & Solutions in second program of positioning Shapes with Turtle Graphics
+ I faced challenges while Drawing the circle centered at given (x, y) coordinates required adjusting turtle position, as standard turtle.circle() draws relative to the bottom edge.
+But somehow i adjusted the starting position to (x, y - radius) while lifting the pen via turtle.penup(), preventing unknown stray lines across the canvas before calling turtle.begin_fill().
